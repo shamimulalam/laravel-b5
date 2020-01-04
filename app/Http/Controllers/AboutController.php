@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class AboutController extends Controller
 {
-    public function viewAboutFile(){
-        return view('about_file');
+    public function viewAboutFile(Request $request){
+        $data['heading'] = $request->head;
+        return view('about_file',$data);
     }
 }

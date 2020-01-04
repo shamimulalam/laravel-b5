@@ -1,1 +1,2 @@
-<h1>From Contact Us File</h1>
+<h1><?php echo $heading; ?></h1>
+<p><?php echo $paragraph ?></p>

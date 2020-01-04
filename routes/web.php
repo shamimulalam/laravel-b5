@@ -16,4 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('about','AboutController@viewAboutFile');
+Route::post('about','AboutController@viewAboutFile');
 Route::get('contact_us','ContactUsController@viewContactusFile');
