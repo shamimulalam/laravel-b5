@@ -15,6 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('teacher',function (){
-    return view('teacher');
-});
+Route::get('about','AboutController@viewAboutFile');
+Route::get('contact_us','ContactUsController@viewContactusFile');
